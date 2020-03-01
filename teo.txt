@@ -1,1 +1,6 @@
 *.teo129.ml
+*.com
+*.net
+*.gov
+*.org
+*.*
