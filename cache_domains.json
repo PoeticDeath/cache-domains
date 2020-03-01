@@ -88,6 +88,11 @@
 			"domain_files": ["uplay.txt"]
 		},
 		{
+			"name": "teo",
+			"description": "CDN for TEO",
+			"domain_files": ["teo.txt"]
+		},
+		{
 			"name": "teso",
 			"description": "CDN for The Elder Scrolls Online",
 			"domain_files": ["teso.txt"]
