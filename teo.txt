@@ -1,1 +1,2 @@
 *.teo129.ml
+*.google.com
