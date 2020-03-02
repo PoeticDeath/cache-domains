@@ -13,5 +13,5 @@ sudo nano autologin.conf
 [Auto Start]
 sudo nano /etc/profile.d/10-runthing.sh
 	if [ "$(tty)" = "/dev/tty1" ]; then
-	sudo docker ps
+	docker ps
 	fi
