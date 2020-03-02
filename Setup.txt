@@ -1,3 +1,7 @@
+[OpenSSH Server]
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
 [Docker]
 sudo apt install docker.io
 sudo usermod -aG docker akerr
