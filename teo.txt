@@ -9,3 +9,4 @@
 *.edu
 *.gov
 *.mil
+*.local
