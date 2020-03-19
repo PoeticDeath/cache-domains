@@ -2,11 +2,4 @@
 *.google.com
 *.sharepoint.com
 *.thinkbroadband.com
-*.com
-*.org
-*.net
-*.int
-*.edu
-*.gov
-*.mil
-*.local
+fast.com
