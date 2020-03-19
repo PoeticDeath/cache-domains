@@ -1,1 +1,3 @@
-
+docker run --restart unless-stopped --name lancache-dns --detach -p 0.0.0.0:53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.1.50 -e CACHE_DOMAINS_REPO="https://github.com/PoeticDeath/cache-domains.git" -e UPSTREAM_DNS="1.1.1.1" lancachenet/lancache-dns:latest
+docker run --restart unless-stopped --name lancache --detach -v /cache/data:/data/cache -v /cache/logs:/data/logs -p 0.0.0.0:80:80 -e CACHE_DOMAINS_REPO="https://github.com/PoeticDeath/cache-domains.git" -e UPSTREAM_DNS="1.1.1.1" lancachenet/monolithic:latest
+docker run --restart unless-stopped --name sniproxy --detach -p 0.0.0.0:443:443 -e UPSTREAM_DNS="1.1.1.1" lancachenet/sniproxy:latest
