@@ -6,7 +6,7 @@ sudo systemctl start ssh
 sudo apt install docker.io
 sudo usermod -aG docker akerr
 sudo docker run --restart unless-stopped --name lancache-dns --detach -p 192.168.1.50:53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.1.50 -e CACHE_DOMAINS_REPO="https://github.com/PoeticDeath/cache-domains.git" -e UPSTREAM_DNS="1.1.1.1" lancachenet/lancache-dns:latest
-sudo docker run --restart unless-stopped --name lancache --detach -v /cache/data:/data/cache -v /cache/logs:/data/logs -p 192.168.1.50:80:80 -e CACHE_DOMAINS_REPO="https://github.com/PoeticDeath/cache-domains.git" -e UPSTREAM_DNS="1.1.1.1" -e CACHE_MEM_SIZE=16384m -e CACHE_DISK_SIZE=1000g -e CACHE_MAX_AGE=3650d lancachenet/monolithic:latest
+sudo docker run --restart unless-stopped --name lancache --detach -v /cache/data:/data/cache -v /cache/logs:/data/logs -p 192.168.1.50:80:80 -e CACHE_DOMAINS_REPO="https://github.com/PoeticDeath/cache-domains.git" -e UPSTREAM_DNS="1.1.1.1" -e CACHE_MEM_SIZE=8192m -e CACHE_DISK_SIZE=1000g -e CACHE_MAX_AGE=3650d lancachenet/monolithic:latest
 sudo docker run --restart unless-stopped --name sniproxy --detach -p 192.168.1.50:443:443 -e UPSTREAM_DNS="1.1.1.1" lancachenet/sniproxy:latest
 [Enable MTU 9000]
 sudo nano /etc/docker/daemon.json
