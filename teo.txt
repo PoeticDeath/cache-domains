@@ -2,3 +2,4 @@
 *.google.com
 *.sharepoint.com
 *.thinkbroadband.com
+*.bandwidthplace.com
