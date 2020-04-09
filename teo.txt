@@ -1,5 +1,4 @@
 *.teo129.ml
-*.google.com
 *.sharepoint.com
 *.thinkbroadband.com
 *.fast.com
