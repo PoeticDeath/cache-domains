@@ -1,3 +1,2 @@
 *.teo129.ml
 *.thinkbroadband.com
-*.fast.com
