@@ -1,2 +1,10 @@
 *.teo129.ml
 *.thinkbroadband.com
+*.net
+*.com
+*.org
+*.us
+*.int
+*.mil
+*.edu
+*.gov
